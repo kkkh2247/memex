@@ -130,27 +130,7 @@
       <!-- Firebase JS SDK CDN 추가 (권장) -->
       <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js"></script>
-      <script>
-          // 여기에 복사한 firebaseConfig 붙여넣기!
-          const firebaseConfig = {
-              apiKey: "AIzaSyCfKOEX4n6uXH1MziHW02xYB_AHNd5VfQM",
-              authDomain: "memex-8cf52.firebaseapp.com",
-              projectId: "memex-8cf52",
-              storageBucket: "memex-8cf52.firebasestorage.app",
-              messagingSenderId: "329573143881",
-              appId: "1:329573143881:web:0fdc9eb85bd8bc1b313698"
-          };
-
-          firebase.initializeApp(firebaseConfig);
-
-          // 아래에 랭킹 저장/불러오기 함수도 같이 작성하세요.
-          // 예: window.UploadScore = function(name, score) { ... }
-          window.UploadScore = function (userName, score) {
-              const entry = { name: userName, score: Number(score) };
-              firebase.database().ref("ranking").push(entry);
-          };
-
-      </script>
+   
 
   </body>
 </html>
